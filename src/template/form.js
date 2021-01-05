@@ -1,9 +1,5 @@
-/* const saludo = () => {
-    alert('que pasa chupon');
-};
-*/
-
-function saludo(cadena) {
+const saludo = (cadena) => {
     alert(cadena);
-}
+};
+
 export default saludo;

@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #008891;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header__logo p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #f6be07;
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.main__bank {
+    width: 50%;
+    background-color: #d2eaea;
+}
+
+.main__bank--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.main__bank--form input {
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.main__bank--form input:hover {
+    box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.72);
+}
+
+.input  {
+    width: 324px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__bank--form button {
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    width: 125px;
+}
+
+.main__bank--form #consulta {
+    color:#ed3947;
+    border: 2px solid #ed3947;
+}
+
+.main__bank--form #consulta:hover {
+    color:  black;
+    border: 2px solid  #d2eaea;
+    background-color:#ed3947;
+}
+
+.main__bank--form #consigna {
+    color:#2e4595;
+    border: 2px solid #2e4595;
+}
+
+.main__bank--form #consigna:hover {
+    color:  white;
+    border: 2px solid  #d2eaea;
+    background-color:#2e4595;
+}
+
+.main__bank--form #retira {
+    color: #f6be07;
+    border: 2px solid #f6be07;
+}
+
+.main__bank--form #retira:hover {
+    color:  black;
+    border: 2px solid  #d2eaea;
+    background-color: #f6be07;
+}
+
+.main__API {
+    width: 50%;
+    background-color: yellow;
+}
