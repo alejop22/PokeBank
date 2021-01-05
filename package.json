@@ -1,0 +1,18 @@
+{
+  "name": "pokebank",
+  "version": "1.0.0",
+  "description": "Banco de Pokemons para depositar, consultar o retirar",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "pokeAPI",
+    "npm",
+    "css",
+    "html"
+  ],
+  "author": "Alejandro Palacio <alejandrooss94@gmail.com>",
+  "license": "MIT"
+}
