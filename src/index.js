@@ -10,7 +10,7 @@ let consigna = document.getElementById('consigna');
 let retira = document.getElementById('retira');
 
 consulta.addEventListener('click', () => {
-    alert(`Saldo disponible: ${cuenta()}$`);
+    alert(`Saldo disponible: $${cuenta()}`);
 });
 
 consigna.addEventListener('click', () => {
@@ -19,7 +19,7 @@ consigna.addEventListener('click', () => {
         alert('Ingrese algun valor para consignar');
     } else {
         cuenta(input);
-        alert(`Consigno ${input}$ con exito!`);
+        alert(`Consigno $${input} con exito!`);
     }
 });
 
@@ -28,7 +28,7 @@ retira.addEventListener('click', () => {
     if (input === 0 || isNaN(input) || cuenta() < input) {
         alert('Ingrese un valor valido para retirar');
     } else {
-        alert(`Ha retirado ${input}$ con exito!`);
+        alert(`Ha retirado $${input} con exito!`);
         cuenta(input*(-1));
     };
 });
