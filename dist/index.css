@@ -103,5 +103,12 @@ body {
 
 .main__API {
     width: 50%;
-    background-color: yellow;
+    background-color: #d2eaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__API button {
+    cursor: pointer;
 }
