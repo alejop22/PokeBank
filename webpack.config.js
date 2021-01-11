@@ -3,6 +3,7 @@ const path = require('path');//Nos permite acceder a donde estamos en las carpet
 const HtmlWebpackPlugin = require('html-webpack-plugin');//Archivo necesario para trabajar con HTML
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');//Archivo necesario para trabajar con CSS
+const webpack = require('webpack');
 
 module.exports = {//Aqui se encuentra toda la configuracion de lo que va a suceder. Modulo para exportar
     entry: './src/index.js',//Punto de entrada con su direccion. Aqui viene el codigo inicial y de aqui parte el desarrollo
@@ -24,6 +25,9 @@ module.exports = {//Aqui se encuentra toda la configuracion de lo que va a suced
             }
         ]
     },
+    devServer: {
+        hot: true
+    },
     plugins: [//Establecemos los plugins que vamos a utilizar
         new HtmlWebpackPlugin(//Permite trabajar con los archivos HTML
             {
@@ -32,6 +36,7 @@ module.exports = {//Aqui se encuentra toda la configuracion de lo que va a suced
                 filename: './index.html',//El nombre que tendrá el archivo
             }
         ),
+        new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin({
             patterns: [{from: './src/styles/index.css', to: ''}],
         }),
