@@ -66,11 +66,13 @@ body {
     cursor: pointer;
     padding: 5px;
     width: 125px;
+    outline: none;
 }
 
 .main__bank--form #consulta {
     color:#ed3947;
     border: 2px solid #ed3947;
+    border-radius: 15px;
 }
 
 .main__bank--form #consulta:hover {
@@ -82,6 +84,7 @@ body {
 .main__bank--form #consigna {
     color:#2e4595;
     border: 2px solid #2e4595;
+    border-radius: 15px;
 }
 
 .main__bank--form #consigna:hover {
@@ -93,6 +96,7 @@ body {
 .main__bank--form #retira {
     color: #f6be07;
     border: 2px solid #f6be07;
+    border-radius: 15px;
 }
 
 .main__bank--form #retira:hover {
@@ -107,8 +111,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main__API button {
     cursor: pointer;
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #377840;
+    color: #377840;
+    outline: none;
+}
+
+.main__API button:hover {
+    background-color: #377840;
+    color: white;
+}
+
+.main__API img {
+    height: 150px;
+}
+
+.main__API p {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
 }

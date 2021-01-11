@@ -43,6 +43,7 @@ const numeroAleatorio = () => {
 
 buttonAPI.addEventListener('click', () => {
     let img = document.getElementById('img');
+    let pokeName = document.getElementById('pokeName');
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET",`${API}${numeroAleatorio()}`);
     xhttp.send();
@@ -50,7 +51,10 @@ buttonAPI.addEventListener('click', () => {
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             let datoPokemon = JSON.parse(this.responseText);
-            img.setAttribute("src",datoPokemon.sprites.front_default)
+            img.setAttribute("src",datoPokemon.sprites.front_default);
+            pokeName.textContent = (datoPokemon.name);
+        } else {
+            pokeName.textContent = 'Error en la API';
         }
     };
 });
